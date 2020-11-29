@@ -18,39 +18,47 @@
       <nav class="header-navigation">
         <a href="./index.html" class="logo"><span class="logo-first">Web</span><span
             class="logo-second-black">Studio</span></a>
-        <ul class="navigation">
-          <li>
-            <a href="./index.html">
-              Студия
-            </a>
-          </li>
-          <li>
-            <a class="current" href="./portfolio.html">
-              Портфолио
-            </a>
-          </li>
-          <li>
-            <a href="">
-              Контакты
-            </a>
-          </li>
-        </ul>
+        <div class="menu-wrapper" data-menu>
+          <ul class="navigation">
+            <li>
+              <a href="./index.html">
+                Студия
+              </a>
+            </li>
+            <li>
+              <a class="current" href="./portfolio.html">
+                Портфолио
+              </a>
+            </li>
+            <li>
+              <a href="">
+                Контакты
+              </a>
+            </li>
+          </ul>
+          <ul class="contact">
+            <li>
+              <a href="mailto:info@example.com" class="contact-text">
+                <svg class="envelope">
+                  <use href="./img/sprite.svg#icon-envelope"></use>
+                </svg>info@devstudio.com
+              </a>
+            </li>
+            <li>
+              <a href="tel:+380991111111" class="contact-text contact-text-vector">
+                <svg class="vector">
+                  <use href="./img/sprite.svg#icon-vector"></use>
+                </svg>+38 096 111 11 11</a>
+            </li>
+          </ul>
+        </div>
       </nav>
-      <ul class="contact">
-        <li>
-          <a href="mailto:info@example.com" class="contact-text">
-            <svg class="envelope">
-              <use href="./img/sprite.svg#icon-envelope"></use>
-            </svg>info@devstudio.com
-          </a>
-        </li>
-        <li>
-          <a href="tel:+380991111111" class="contact-text contact-text-vector">
-            <svg class="vector">
-              <use href="./img/sprite.svg#icon-vector"></use>
-            </svg>+38 096 111 11 11</a>
-        </li>
-      </ul>
+      <button class="header-menu-icon" data-menu-button>
+        <svg width="18px" height="18px">
+          <use class="close" href="./img/sprite.svg#icon-close"></use>
+          <use class="menu" href="./img/sprite.svg#icon-menu"></use>
+        </svg>
+      </button>
     </div>
   </header>
   <main>
@@ -66,7 +74,21 @@
         <ul class="portfolio-item">
           <li class="item">
             <div class="item-image">
-              <img src="./img/portfolio-image/img-one.png" alt="image">
+              <picture>
+                <source srcset="./img/portfolio-image/desc-a.webp 1x, ./img/portfolio-image/desc-a@2x.webp 2x"
+                  media="(min-width: 1200px)" type="image/webp">
+                <source srcset="./img/portfolio-image/desc-a.jpg 1x, ./img/portfolio-image/desc-a@2x.jpg 2x"
+                  media="(min-width: 1200px)">
+                <source srcset="./img/portfolio-image/tab-a.webp 1x, ./img/portfolio-image/tab-a@2.webp 2x"
+                  media="(min-width: 768px)" type="image/webp">
+                <source srcset="./img/portfolio-image/tab-a.jpg 1x, ./img/portfolio-image/tab-a@2.jpg 2x"
+                  media="(min-width: 768px)">
+                <source srcset="./img/portfolio-image/mob-a.webp 1x, ./img/portfolio-image/mob-a@2.webp 2x"
+                  media="(min-width: 320px)" type="image/webp">
+                <source srcset="./img/portfolio-image/mob-a.jpg 1x, ./img/portfolio-image/mob-a@2.jpg 2x"
+                  media="(min-width: 320px)">
+                <img src="./img/portfolio-image/mob-a.jpg" alt="image">
+              </picture>
               <div class="item-description">
                 <p class="item-description-text">Технокряк это современная площадка распространения коронавируса.
                   Компании используют
@@ -81,7 +103,21 @@
           </li>
           <li class="item">
             <div class="item-image">
-              <img src="./img/portfolio-image/img-two.png" alt="image">
+              <picture>
+                <source srcset="./img/portfolio-image/desc-b.webp 1x, ./img/portfolio-image/desc-b@2.webp 2x"
+                  media="(min-width: 1200px)" type="image/webp">
+                <source srcset="./img/portfolio-image/desc-b.jpg 1x, ./img/portfolio-image/desc-b@2.jpg 2x"
+                  media="(min-width: 1200px)">
+                <source srcset="./img/portfolio-image/tab-b.webp 1x, ./img/portfolio-image/tab-b@2.webp 2x"
+                  media="(min-width: 768px)" type="image/webp">
+                <source srcset="./img/portfolio-image/tab-b.jpg 1x, ./img/portfolio-image/tab-b@2.jpg 2x"
+                  media="(min-width: 768px)">
+                <source srcset="./img/portfolio-image/mob-b.webp 1x, ./img/portfolio-image/mob-b@2.webp 2x"
+                  media="(min-width: 320px)" type="image/webp">
+                <source srcset="./img/portfolio-image/mob-b.jpg 1x, ./img/portfolio-image/mob-b@2.jpg 2x"
+                  media="(min-width: 320px)">
+                <img src="./img/portfolio-image/mob-b.jpg" alt="image">
+              </picture>
               <div class="item-description">
                 <p class="item-description-text">Технокряк это современная площадка распространения коронавируса.
                   Компании используют
@@ -96,7 +132,21 @@
           </li>
           <li class="item">
             <div class="item-image">
-              <img src="./img/portfolio-image/img-three.png" alt="image">
+              <picture>
+                <source srcset="./img/portfolio-image/desc-c.webp 1x, ./img/portfolio-image/desc-c@2.webp 2x"
+                  media="(min-width: 1200px)" type="image/webp">
+                <source srcset="./img/portfolio-image/desc-c.jpg 1x, ./img/portfolio-image/desc-c@2.jpg 2x"
+                  media="(min-width: 1200px)">
+                <source srcset="./img/portfolio-image/t3-img-min.webp 1x, ./img/portfolio-image/t3-img@2x-min.webp 2x"
+                  media="(min-width: 768px)" type="image/webp">
+                <source srcset="./img/portfolio-image/t3-img-min.jpg 1x, ./img/portfolio-image/t3-img@2x-min.jpg 2x"
+                  media="(min-width: 768px)">
+                <source srcset="./img/portfolio-image/mob-c.webp 1x, ./img/portfolio-image/mob-c@2.webp 2x"
+                  media="(min-width: 320px)" type="image/webp">
+                <source srcset="./img/portfolio-image/mob-c.jpg 1x, ./img/portfolio-image/mob-c@2.jpg 2x"
+                  media="(min-width: 320px)">
+                <img src="./img/portfolio-image/mob-c.jpg" alt="image">
+              </picture>
               <div class="item-description">
                 <p class="item-description-text">Технокряк это современная площадка распространения коронавируса.
                   Компании используют
@@ -111,7 +161,21 @@
           </li>
           <li class="item">
             <div class="item-image">
-              <img src="./img/portfolio-image/img-four.png" alt="image">
+              <picture>
+                <source srcset="./img/portfolio-image/d4-img-min.webp 1x, ./img/portfolio-image/d4-img@2x-min.webp 2x"
+                  media="(min-width: 1200px)" type="image/webp">
+                <source srcset="./img/portfolio-image/d4-img-min.jpg 1x, ./img/portfolio-image/d4-img@2x-min.jpg 2x"
+                  media="(min-width: 1200px)">
+                <source srcset="./img/portfolio-image/t4-img-min.webp 1x, ./img/portfolio-image/t4-img@2x-min.webp 2x"
+                  media="(min-width: 768px)" type="image/webp">
+                <source srcset="./img/portfolio-image/t4-img-min.jpg 1x, ./img/portfolio-image/t4-img@2x-min.jpg 2x"
+                  media="(min-width: 768px)">
+                <source srcset="./img/portfolio-image/m4-img-min.webp 1x, ./img/portfolio-image/m4-img@2x-min.webp 2x"
+                  media="(min-width: 320px)" type="image/webp">
+                <source srcset="./img/portfolio-image/m4-img-min.jpg 1x, ./img/portfolio-image/m4-img@2x-min.jpg 2x"
+                  media="(min-width: 320px)">
+                <img src="./img/portfolio-image/m4-img-min.jpg" alt="image">
+              </picture>
               <div class="item-description">
                 <p class="item-description-text">Технокряк это современная площадка распространения коронавируса.
                   Компании используют
@@ -126,7 +190,21 @@
           </li>
           <li class="item">
             <div class="item-image">
-              <img src="./img/portfolio-image/img-five.png" alt="image">
+              <picture>
+                <source srcset="./img/portfolio-image/d5-img-min.webp 1x, ./img/portfolio-image/d5-img@2x-min.webp 2x"
+                  media="(min-width: 1200px)" type="image/webp">
+                <source srcset="./img/portfolio-image/d5-img-min.jpg 1x, ./img/portfolio-image/d5-img@2x-min.jpg 2x"
+                  media="(min-width: 1200px)">
+                <source srcset="./img/portfolio-image/t5-img-min.webp 1x, ./img/portfolio-image/t5-img@2x-min.webp 2x"
+                  media="(min-width: 768px)" type="image/webp">
+                <source srcset="./img/portfolio-image/t5-img-min.jpg 1x, ./img/portfolio-image/t5-img@2x-min.jpg 2x"
+                  media="(min-width: 768px)">
+                <source srcset="./img/portfolio-image/m5-img-min.webp 1x, ./img/portfolio-image/m5-img@2x-min.webp 2x"
+                  media="(min-width: 320px)" type="image/webp">
+                <source srcset="./img/portfolio-image/m5-img-min.jpg 1x, ./img/portfolio-image/m5-img@2x-min.jpg 2x"
+                  media="(min-width: 320px)">
+                <img src="./img/portfolio-image/m5-img-min.jpg" alt="image">
+              </picture>
               <div class="item-description">
                 <p class="item-description-text">Технокряк это современная площадка распространения коронавируса.
                   Компании используют
@@ -141,7 +219,21 @@
           </li>
           <li class="item">
             <div class="item-image">
-              <img src="./img/portfolio-image/img-six.png" alt="image">
+              <picture>
+                <source srcset="./img/portfolio-image/d6-img-min.webp 1x, ./img/portfolio-image/d6-img@2x-min.webp 2x"
+                  media="(min-width: 1200px)" type="image/webp">
+                <source srcset="./img/portfolio-image/d6-img-min.jpg 1x, ./img/portfolio-image/d6-img@2x-min.jpg 2x"
+                  media="(min-width: 1200px)">
+                <source srcset="./img/portfolio-image/t6-img-min.webp 1x, ./img/portfolio-image/t6-img@2x-min.webp 2x"
+                  media="(min-width: 768px)" type="image/webp">
+                <source srcset="./img/portfolio-image/t6-img-min.jpg 1x, ./img/portfolio-image/t6-img@2x-min.jpg 2x"
+                  media="(min-width: 768px)">
+                <source srcset="./img/portfolio-image/m6-img-min.webp 1x, ./img/portfolio-image/m6-img@2x-min.webp 2x"
+                  media="(min-width: 320px)" type="image/webp">
+                <source srcset="./img/portfolio-image/m6-img-min.jpg 1x, ./img/portfolio-image/m6-img@2x-min.jpg 2x"
+                  media="(min-width: 320px)">
+                <img src="./img/portfolio-image/m6-img-min.jpg" alt="image">
+              </picture>
               <div class="item-description">
                 <p class="item-description-text">Технокряк это современная площадка распространения коронавируса.
                   Компании используют
@@ -156,7 +248,21 @@
           </li>
           <li class="item">
             <div class="item-image">
-              <img src="./img/portfolio-image/img-seven.png" alt="image">
+              <picture>
+                <source srcset="./img/portfolio-image/d7-img-min.webp 1x, ./img/portfolio-image/d7-img@2x-min.webp 2x"
+                  media="(min-width: 1200px)" type="image/webp">
+                <source srcset="./img/portfolio-image/d7-img-min.jpg 1x, ./img/portfolio-image/d7-img@2x-min.jpg 2x"
+                  media="(min-width: 1200px)">
+                <source srcset="./img/portfolio-image/t7-img-min.webp 1x, ./img/portfolio-image/t7-img@2x-min.webp 2x"
+                  media="(min-width: 768px)" type="image/webp">
+                <source srcset="./img/portfolio-image/t7-img-min.jpg 1x, ./img/portfolio-image/t7-img@2x-min.jpg 2x"
+                  media="(min-width: 768px)">
+                <source srcset="./img/portfolio-image/m7-img-min.webp 1x, ./img/portfolio-image/m7-img@2x-min.webp 2x"
+                  media="(min-width: 320px)" type="image/webp">
+                <source srcset="./img/portfolio-image/m7-img-min.jpg 1x, ./img/portfolio-image/m7-img@2x-min.jpg 2x"
+                  media="(min-width: 320px)">
+                <img src="./img/portfolio-image/m7-img-min.jpg" alt="image">
+              </picture>
               <div class="item-description">
                 <p class="item-description-text">Технокряк это современная площадка распространения коронавируса.
                   Компании используют
@@ -171,7 +277,21 @@
           </li>
           <li class="item">
             <div class="item-image">
-              <img src="./img/portfolio-image/img-eight.png" alt="image">
+              <picture>
+                <source srcset="./img/portfolio-image/d8-img-min.webp 1x, ./img/portfolio-image/d8-img@2x-min.webp 2x"
+                  media="(min-width: 1200px)" type="image/webp">
+                <source srcset="./img/portfolio-image/d8-img-min.jpg 1x, ./img/portfolio-image/d8-img@2x-min.jpg 2x"
+                  media="(min-width: 1200px)">
+                <source srcset="./img/portfolio-image/t8-img-min.webp 1x, ./img/portfolio-image/t8-img@2x-min.webp 2x"
+                  media="(min-width: 768px)" type="image/webp">
+                <source srcset="./img/portfolio-image/t8-img-min.jpg 1x, ./img/portfolio-image/t8-img@2x-min.jpg 2x"
+                  media="(min-width: 768px)">
+                <source srcset="./img/portfolio-image/m8-img-min.webp 1x, ./img/portfolio-image/m8-img@2x-min.webp 2x"
+                  media="(min-width: 320px)" type="image/webp">
+                <source srcset="./img/portfolio-image/m8-img-min.jpg 1x, ./img/portfolio-image/m8-img@2x-min.jpg 2x"
+                  media="(min-width: 320px)">
+                <img src="./img/portfolio-image/m8-img-min.jpg" alt="image">
+              </picture>
               <div class="item-description">
                 <p class="item-description-text">Технокряк это современная площадка распространения коронавируса.
                   Компании используют
@@ -186,7 +306,21 @@
           </li>
           <li class="item">
             <div class="item-image">
-              <img src="./img/portfolio-image/img-nine.png" alt="image">
+              <picture>
+                <source srcset="./img/portfolio-image/d9-img-min.webp 1x, ./img/portfolio-image/d9-img@2x-min.webp 2x"
+                  media="(min-width: 1200px)" type="image/webp">
+                <source srcset="./img/portfolio-image/d9-img-min.jpg 1x, ./img/portfolio-image/d9-img@2x-min.jpg 2x"
+                  media="(min-width: 1200px)">
+                <source srcset="./img/portfolio-image/t9-img-min.webp 1x, ./img/portfolio-image/t9-img@2x-min.webp 2x"
+                  media="(min-width: 768px)" type="image/webp">
+                <source srcset="./img/portfolio-image/t9-img-min.jpg 1x, ./img/portfolio-image/t9-img@2x-min.jpg 2x"
+                  media="(min-width: 768px)">
+                <source srcset="./img/portfolio-image/m9-img-min.webp 1x, ./img/portfolio-image/m9-img@2x-min.webp 2x"
+                  media="(min-width: 320px)" type="image/webp">
+                <source srcset="./img/portfolio-image/m9-img-min.jpg 1x, ./img/portfolio-image/m9-img@2x-min.jpg 2x"
+                  media="(min-width: 320px)">
+                <img src="./img/portfolio-image/m9-img-min.jpg" alt="image">
+              </picture>
               <div class="item-description">
                 <p class="item-description-text">Технокряк это современная площадка распространения коронавируса.
                   Компании используют
@@ -258,6 +392,7 @@
       </div>
     </div>
   </footer>
+  <script src="./js/menu.js"></script>
 </body>
 
 </html>

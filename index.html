@@ -18,39 +18,41 @@
       <nav class="header-navigation">
         <a href="./index.html" class="logo"><span class="logo-first">Web</span><span
             class="logo-second-black">Studio</span></a>
-        <ul class="navigation">
-          <li>
-            <a class="current" href="./index.html">
-              Студия
-            </a>
-          </li>
-          <li>
-            <a href="./portfolio.html">
-              Портфолио
-            </a>
-          </li>
-          <li>
-            <a href="">
-              Контакты
-            </a>
-          </li>
-        </ul>
+        <div class="menu-wrapper" data-menu>
+          <ul class="navigation">
+            <li>
+              <a class="current" href="./index.html">
+                Студия
+              </a>
+            </li>
+            <li>
+              <a href="./portfolio.html">
+                Портфолио
+              </a>
+            </li>
+            <li>
+              <a href="">
+                Контакты
+              </a>
+            </li>
+          </ul>
+          <ul class="contact">
+            <li>
+              <a href="mailto:info@example.com" class="contact-text">
+                <svg class="envelope">
+                  <use href="./img/sprite.svg#icon-envelope"></use>
+                </svg>info@devstudio.com
+              </a>
+            </li>
+            <li>
+              <a href="tel:+380991111111" class="contact-text contact-text-vector">
+                <svg class="vector">
+                  <use href="./img/sprite.svg#icon-vector"></use>
+                </svg>+38 096 111 11 11</a>
+            </li>
+          </ul>
+        </div>
       </nav>
-      <ul class="contact">
-        <li>
-          <a href="mailto:info@example.com" class="contact-text">
-            <svg class="envelope">
-              <use href="./img/sprite.svg#icon-envelope"></use>
-            </svg>info@devstudio.com
-          </a>
-        </li>
-        <li>
-          <a href="tel:+380991111111" class="contact-text contact-text-vector">
-            <svg class="vector">
-              <use href="./img/sprite.svg#icon-vector"></use>
-            </svg>+38 096 111 11 11</a>
-        </li>
-      </ul>
       <button class="header-menu-icon" data-menu-button>
         <svg width="18px" height="18px">
           <use class="close" href="./img/sprite.svg#icon-close"></use>
@@ -108,7 +110,15 @@
         <h2>Чем мы занимаемся</h2>
         <ul class="work-types-list">
           <li class="work-types-items">
-            <a href=""><img src="./img/img.png" alt="Картинка" width="370"></a>
+            <a href="">
+              <picture>
+                <source srcset="./img/work-types/whatwedo1.webp 1x, ./img/work-types/whatwedo1@2x.webp 2x"
+                  media="(min-width: 1200px)" type="image/webp">
+                <source srcset="./img/work-types/whatwedo1.jpg 1x, ./img/work-types/whatwedo1@2x.jpg 2x"
+                  media="(min-width: 1200px)">
+                <img src="./img/work-types/whatwedo1.jpg" alt="image">
+              </picture>
+            </a>
             <div class="description">
               <p>
                 Десктопные приложения
@@ -116,7 +126,15 @@
             </div>
           </li>
           <li class="work-types-items">
-            <a href=""><img src="./img/img2.png" alt="Картинка" width="370"></a>
+            <a href="">
+              <picture>
+                <source srcset="./img/work-types/whatwedo2.webp 1x, ./img/work-types/whatwedo2@2x.webp 2x"
+                  media="(min-width: 1200px)" type="image/webp">
+                <source srcset="./img/work-types/whatwedo2.jpg 1x, ./img/work-types/whatwedo2@2x.jpg 2x"
+                  media="(min-width: 1200px)">
+                <img src="./img/work-types/whatwedo2.jpg" alt="image">
+              </picture>
+            </a>
             <div class="description">
               <p>
                 Мобильные приложения
@@ -124,7 +142,15 @@
             </div>
           </li>
           <li class="work-types-items">
-            <a href=""><img src="./img/img3.png" alt="Картинка" width="370"></a>
+            <a href="">
+              <picture>
+                <source srcset="./img/work-types/whatwedo3.webp 1x, ./img/work-types/whatwedo3@2x.webp 2x"
+                  media="(min-width: 1200px)" type="image/webp">
+                <source srcset="./img/work-types/whatwedo3.jpg 1x, ./img/work-types/whatwedo3@2x.jpg 2x"
+                  media="(min-width: 1200px)">
+                <img src="./img/work-types/whatwedo3.jpg" alt="image">
+              </picture>
+            </a>
             <div class="description">
               <p>
                 Дизайнерские решения
@@ -139,7 +165,21 @@
         <h2>Наша команда</h2>
         <ul class="team-list">
           <li class="team-list-item">
-            <img src="./img/photo/IgorDem.jpg" alt="Фото работника">
+            <picture>
+              <source srcset="./img/our-team/ourteam-pc1.webp 1x, ./img/our-team/ourteam-pc1@2x.webp 2x"
+                media="(min-width: 1200px)" type="image/webp">
+              <source srcset="./img/our-team/ourteam-pc1.jpg 1x, ./img/our-team/ourteam-pc1@2x.jpg 2x"
+                media="(min-width: 1200px)">
+              <source srcset="./img/our-team/ourteam-tablet1.webp 1x, ./img/our-team/ourteam-tablet1@2x.webp 2x"
+                media="(min-width: 768px)" type="image/webp">
+              <source srcset="./img/our-team/ourteam-tablet1.jpg 1x, ./img/our-team/ourteam-tablet1@2x.jpg 2x"
+                media="(min-width: 768px)">
+              <source srcset="./img/our-team/ourteam-mobile1.webp 1x, ./img/our-team/ourteam-mobile1@2x.webp 2x"
+                media="(min-width: 320px)" type="image/webp">
+              <source srcset="./img/our-team/ourteam-mobile1.jpg 1x, ./img/our-team/ourteam-mobile1@2x.jpg 2x"
+                media="(min-width: 320px)">
+              <img src="./img/our-team/ourteam-mobile1.jpg" alt="image">
+            </picture>
             <h3>Игорь Демьяненко</h3>
             <p>Product Designer</p>
             <div class="team-bottom-container">
@@ -166,7 +206,21 @@
             </div>
           </li>
           <li class="team-list-item">
-            <img src="./img/photo/OlgaRep.jpg" alt="Фото работника">
+            <picture>
+              <source srcset="./img/our-team/ourteam-pc2.webp 1x, ./img/our-team/ourteam-pc2@2x.webp 2x"
+                media="(min-width: 1200px)" type="image/webp">
+              <source srcset="./img/our-team/ourteam-pc2.jpg 1x, ./img/our-team/ourteam-pc2@2x.jpg 2x"
+                media="(min-width: 1200px)">
+              <source srcset="./img/our-team/ourteam-tablet2.webp 1x, ./img/our-team/ourteam-tablet2@2x.webp 2x"
+                media="(min-width: 768px)" type="image/webp">
+              <source srcset="./img/our-team/ourteam-tablet2.jpg 1x, ./img/our-team/ourteam-tablet2@2x.jpg 2x"
+                media="(min-width: 768px)">
+              <source srcset="./img/our-team/ourteam-mobile2.webp 1x, ./img/our-team/ourteam-mobile2@2x.webp 2x"
+                media="(min-width: 320px)" type="image/webp">
+              <source srcset="./img/our-team/ourteam-mobile2.jpg 1x, ./img/our-team/ourteam-mobile2@2x.jpg 2x"
+                media="(min-width: 320px)">
+              <img src="./img/our-team/ourteam-mobile2.jpg" alt="image">
+            </picture>
             <h3>Ольга Репина</h3>
             <p>Frontend Developer</p>
             <div class="team-bottom-container">
@@ -193,7 +247,21 @@
             </div>
           </li>
           <li class="team-list-item">
-            <img src="./img/photo/NicolayTar.jpg" alt="Фото работника">
+            <picture>
+              <source srcset="./img/our-team/ourteam-pc3.webp 1x, ./img/our-team/ourteam-pc3@2x.webp 2x"
+                media="(min-width: 1200px)" type="image/webp">
+              <source srcset="./img/our-team/ourteam-pc3.jpg 1x, ./img/our-team/ourteam-pc3@2x.jpg 2x"
+                media="(min-width: 1200px)">
+              <source srcset="./img/our-team/ourteam-tablet3.webp 1x, ./img/our-team/ourteam-tablet3@2x.webp 2x"
+                media="(min-width: 768px)" type="image/webp">
+              <source srcset="./img/our-team/ourteam-tablet3.jpg 1x, ./img/our-team/ourteam-tablet3@2x.jpg 2x"
+                media="(min-width: 768px)">
+              <source srcset="./img/our-team/ourteam-mobile3.webp 1x, ./img/our-team/ourteam-mobile3@2x.webp 2x"
+                media="(min-width: 320px)" type="image/webp">
+              <source srcset="./img/our-team/ourteam-mobile3.jpg 1x, ./img/our-team/ourteam-mobile3@2x.jpg 2x"
+                media="(min-width: 320px)">
+              <img src="./img/our-team/ourteam-mobile3.jpg" alt="image">
+            </picture>
             <h3>Николай Тарасов</h3>
             <p>Marketing</p>
             <div class="team-bottom-container">
@@ -220,7 +288,21 @@
             </div>
           </li>
           <li class="team-list-item">
-            <img src="./img/photo/MishaErm.jpg" alt="Фото работника">
+            <picture>
+              <source srcset="./img/our-team/ourteam-pc4.webp 1x, ./img/our-team/ourteam-pc4@2x.webp 2x"
+                media="(min-width: 1200px)" type="image/webp">
+              <source srcset="./img/our-team/ourteam-pc4.jpg 1x, ./img/our-team/ourteam-pc4@2x.jpg 2x"
+                media="(min-width: 1200px)">
+              <source srcset="./img/our-team/ourteam-tablet4.webp 1x, ./img/our-team/ourteam-tablet4@2x.webp 2x"
+                media="(min-width: 768px)" type="image/webp">
+              <source srcset="./img/our-team/ourteam-tablet4.jpg 1x, ./img/our-team/ourteam-tablet4@2x.jpg 2x"
+                media="(min-width: 768px)">
+              <source srcset="./img/our-team/ourteam-mobile4.webp 1x, ./img/our-team/ourteam-mobile4@2x.webp 2x"
+                media="(min-width: 320px)" type="image/webp">
+              <source srcset="./img/our-team/ourteam-mobile4.jpg 1x, ./img/our-team/ourteam-mobile4@2x.jpg 2x"
+                media="(min-width: 320px)">
+              <img src="./img/our-team/ourteam-mobile4.jpg" alt="image">
+            </picture>
             <h3>Михаил Ермаков</h3>
             <p>UI Designer</p>
             <div class="team-bottom-container">
