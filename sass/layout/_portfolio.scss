@@ -2,7 +2,14 @@
   padding: 94px 0px 94px 0px;
 }
 .portfolio-header {
-  border-bottom: 1px solid #ECECEC;;
+  @media screen and (min-width: 1200px) {
+    border-bottom: 1px solid #ECECEC;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 1200px) {
+  .portfolio-header .container {
+    border-bottom: 1px solid #ECECEC;
+  }
 }
 .portfolio-nav {
   display: flex;

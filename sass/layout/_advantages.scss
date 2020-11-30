@@ -24,7 +24,6 @@
     line-height: 16px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    text-align: center;
     margin-top: 0;
   }
   p {
@@ -74,6 +73,9 @@
     &::before {
       width: 100%;
     }
+    h3 {
+      text-align: center;
+    }
   }
 }
 @media screen and (min-width: 768px) {
@@ -83,6 +85,9 @@
   }
   .advantages-items {
     max-width: 355px;
+    h3 {
+      text-align: left;
+    }
   }
 }
 @media screen and (min-width: 1200px) {
